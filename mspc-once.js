@@ -29,7 +29,6 @@ const runDuelFP = require('./duel-fp.js');
 const runClaimRewards = require('./claim-BPrewards.js');
 const runGuildAttack = require('./guild-attack.js');
 const runBattlePassChests = require('./battlepass-chests.js');
-const runGuildDonate = require('./guild-donate.js');
 
 
 const scripts = [
@@ -37,7 +36,6 @@ const scripts = [
   { name: 'Burn Energy-Before', fn: runBurnEnergy, alwaysRun: true },
   { name: 'Battle Pass Chests', fn: runBattlePassChests, alwaysRun: true },
   { name: 'Burn Energy-After', fn: runBurnEnergy, alwaysRun: true },
-  { name: 'Guild Donate', fn: runGuildDonate, alwaysRun: false },
   /*{ name: 'Claim Duel Rewards', fn: runClaimRewards, alwaysRun: true },
 
   { name: 'Fashion Magazine', fn: runFashionMagazine, envKey: 'LP_FASHION_MAGAZINE_URL' },

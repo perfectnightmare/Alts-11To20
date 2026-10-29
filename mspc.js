@@ -30,7 +30,6 @@ const runClaimRewards = require('./claim-BPrewards.js');
 const runGuildAttack = require('./guild-attack.js');
 const runRate = require('./rate.js');
 const runBattlePassChests = require('./battlepass-chests.js');
-const runGuildDonate = require('./guild-donate.js');
 
 
 
@@ -72,7 +71,6 @@ const scripts = [
   { name: 'Raise stats', fn: runDuelFP, alwaysRun: true },
   { name: 'Rate Guild', fn: runRate, alwaysRun: true },
   //{ name: 'Battle Pass Chests', fn: runBattlePassChests, alwaysRun: false }, //opens chests
-  //{ name: 'Guild Donate', fn: runGuildDonate, alwaysRun: false },
 
 ];
 
