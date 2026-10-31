@@ -68,7 +68,7 @@ const scripts = [
   { name: 'Furniture Script1', fn: runFurnitureScript, alwaysRun: true },
   //{ name: 'Furniture Script2', fn: runFurnitureScript, alwaysRun: true },
   { name: 'Raise stats', fn: runDuelFP, alwaysRun: true },
-  { name: 'Rate Guild', fn: runRate, alwaysRun: true },
+  { name: 'Rate Guild', fn: runRate, alwaysRun: false },
   //{ name: 'Battle Pass Chests', fn: runBattlePassChests, alwaysRun: false }, //opens chests
 
 ];
