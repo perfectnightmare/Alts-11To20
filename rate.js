@@ -88,9 +88,8 @@ const EXCLUDED_LADY_NAMES = [
 //   ];
 const INCLUDED_LADY_IDS = [
   1905079, //rosa
-  8242717, //vivienne
-  7115204 //sherry
-  
+  //8242717, //vivienne
+  //7115204 //sherry
 ];
 // -------------------------------
 
@@ -102,7 +101,7 @@ const DELAY_BETWEEN_RATINGS_MS = 500;
 // rating 3 failed for each of them), we assume something is wrong
 // (bad token, logged out, wrong guild...) and stop without sending
 // the remaining ratings.
-const EARLY_ABORT_CHECK_COUNT = 5;
+const EARLY_ABORT_CHECK_COUNT = 1;
 
 // The game's base address. All internal requests go here.
 const BASE_URL = 'https://v3.g.ladypopular.com';
