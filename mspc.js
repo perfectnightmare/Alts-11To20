@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const { chromium } = require('playwright');
 
 
@@ -59,7 +58,7 @@ const scripts = [
 
   { name: 'Guild Show', fn: runGuildShow, alwaysRun: true },
 
-  { name: 'Pet Training', fn: runPetTraining, alwaysRun: true },
+  { name: 'Pet Training', fn: runPetTraining, alwaysRun: false },
 
   //{ name: 'Bridesmaids Tasks', fn: runBridesmaids, alwaysRun: false },
 
@@ -422,7 +421,19 @@ async function logout(page, account) {
       // 🔐 LOGIN
       // ----------------------------------------------------------
 
-      await login(page, account);
+      // CHANGED: capture login()'s return value and stop this account
+      // if login failed, so no daily reward / sub-scripts / logout run.
+      const loggedIn = await login(page, account);
+
+      if (!loggedIn) {
+
+        console.log(
+          `🚫 ${account.name}: login failed, skipping all tasks for this account.`
+        );
+
+        continue;
+
+      }
 
 
 

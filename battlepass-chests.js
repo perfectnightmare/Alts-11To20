@@ -94,7 +94,8 @@ module.exports = async function runBattlePassChests(page) {
   // 🎁 COLLECT CHESTS
   // ==============================================================
 
-  for (const previousSeason of [0, 1]) {
+  //for (const previousSeason of [0, 1]) {  //both seasons. 0 is current season, 1 is previous season
+  for (const previousSeason of [0]) {
 
     for (const chest of CHESTS) {
 
